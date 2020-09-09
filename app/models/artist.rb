@@ -11,7 +11,6 @@ class Artist < ActiveRecord::Base
   end
 
   def genre_count
-    self.songs
-    binding.pry
+    self.genres.size
   end
 end
